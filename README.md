@@ -1,5 +1,17 @@
 # SPM
-Assignments of Parallel and Distributed Models subject of Artificial Intelligence Master degree of University of Pisa. This repo's purpose is only to share a possible implementation of the exercises proposed in the "assignment.txt" file
+Assignments of Parallel and Distributed Models subject of Artificial Intelligence Master degree of University of Pisa. 
+!!!This repo's purpose is only to share a possible implementation of the exercises proposed by the professor!!!
+
+## Installation of FastFlow
+***
+A little intro about the installation.
+```
+$ cd usr/local/include
+$ git clone https://github.com/fastflow/fastflow.git
+$ mv fastflow/ff ./
+$ cd ff
+$ ./mapping_strings.sh
+```
 
 ## Assignments
 The page hosts assignments given to students to assess different parallel programming techniques and methdologies in preparation of the final project.
@@ -45,5 +57,5 @@ static bool is_prime(ull n) {
 
 Consider your favorite parallel programming framework among the ones we ve seen so far (C++ native threads, OpenMP, GrPPI) and possibly implement more that one version (e.g. a native C++ and an OpenMP version) comparing the relative performances.
 
-                            
+***             
 N.B. The Assignment 4 folder refers to both 4 and 5 assignments
