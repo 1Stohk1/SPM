@@ -30,12 +30,12 @@ while(not(sorted)) {
 }
 ```
   
-with the intent to discuss scalability of the code.
+with the intent to discuss scalability of the code.  
 Assignment 4 (March 30): implement a task pool using C++ threads and STDLIB. The task pool should support parallelism degree as creation parameter and the then submission of tasks that are computed and produce results through side effects. Alternatively they have to produce a result that can be retrieved by the task submitter.  
 Assignment 5 (April 6): implementation of a farm using OpenMP. Tasks to be computed have to be provided through a for loop with iterations producing one of the input tasks and then awaiting for Ta time (parameter) before executing next iteration. The parallelism degree of the farm should be a parameter. Each task should spent some parametric amount of time (possibly using the active_wait functioN) to produce the final result.  
 Assignment 6 (April 13): write a parallel  program that finds all prime numbers in a given range of values, passed as parameters of the command line. In order to check if a number is prime, please use the following code:  
 
-// see http://en.wikipedia.org/wiki/Primality_test
+see [logo]: https://upload.wikimedia.org/wikipedia/commons/c/c5/Wikipedia-logo-v2-it.png  "Spiegazione dell'algoritmo su Wikipedia" http://en.wikipedia.org/wiki/Primality_test
   
 ```
 static bool is_prime(ull n) {
@@ -58,4 +58,4 @@ static bool is_prime(ull n) {
 Consider your favorite parallel programming framework among the ones we ve seen so far (C++ native threads, OpenMP, GrPPI) and possibly implement more that one version (e.g. a native C++ and an OpenMP version) comparing the relative performances.
 ***             
                             
-                            <small> N.B. The Assignment 4 folder refers to both 4 and 5 assignments </small>
+                            *N.B. The Assignment 4 folder refers to both 4 and 5 assignments*
