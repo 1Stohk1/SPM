@@ -35,7 +35,7 @@ Assignment 4 (March 30): implement a task pool using C++ threads and STDLIB. The
 Assignment 5 (April 6): implementation of a farm using OpenMP. Tasks to be computed have to be provided through a for loop with iterations producing one of the input tasks and then awaiting for Ta time (parameter) before executing next iteration. The parallelism degree of the farm should be a parameter. Each task should spent some parametric amount of time (possibly using the active_wait functioN) to produce the final result.  
 Assignment 6 (April 13): write a parallel  program that finds all prime numbers in a given range of values, passed as parameters of the command line. In order to check if a number is prime, please use the following code:  
 
-see [logo]: https://upload.wikimedia.org/wikipedia/commons/c/c5/Wikipedia-logo-v2-it.png  "Spiegazione dell'algoritmo su Wikipedia" http://en.wikipedia.org/wiki/Primality_test
+![solution](https://upload.wikimedia.org/wikipedia/commons/c/c5/Wikipedia-logo-v2-it.png):  "Spiegazione dell'algoritmo su Wikipedia" http://en.wikipedia.org/wiki/Primality_test
   
 ```
 static bool is_prime(ull n) {
