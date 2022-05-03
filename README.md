@@ -58,4 +58,4 @@ static bool is_prime(ull n) {
 Consider your favorite parallel programming framework among the ones we ve seen so far (C++ native threads, OpenMP, GrPPI) and possibly implement more that one version (e.g. a native C++ and an OpenMP version) comparing the relative performances.
 ***             
                             
-                            *N.B. The Assignment 4 folder refers to both 4 and 5 assignments*
+_N.B. The Assignment 4 folder refers to both 4 and 5 assignments_
