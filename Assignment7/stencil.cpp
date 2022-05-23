@@ -1,4 +1,6 @@
 #include <ff/ff.hpp>
+#include <ff/map.hpp>
+#include <ff/parallel_for.hpp>
 #include <iostream>
 #include <vector>
 #include <iterator>
@@ -10,6 +12,8 @@ using namespace ff;
 // library, in the path you prefer and specify to the compiler or otherwise install it in the usr/local/include path
 // that is already specified for searching in it. For further information on how to install FastFlow follow the
 // instruction specified in the GitHub page.
+
+typedef  std::vector<long> ff_task_t;
 
 typedef struct {
     int start;
@@ -37,12 +41,17 @@ void stencil_par(vector<float> &tmp, vector<float> &vec, RANGE delta){
 }
 
 
-// struct F : ff_node_t<int> {
-//     int *svc(int *t) {
-//         stencil(t);
-//         return t;
-//     }
-// }; 
+struct mapWorker : ff_Map<ff_task_t> {
+    ff_task_t *svc(ff_task_t *) {
+       ff_task_t *A = new ff_task_t(100);
+        // this is the parallel_for provided by the ff_Map class
+        parallel_for(0,A->size(),[&A](const long i) { 
+                A->operator[](i)=i;
+		}, std::min(3, (int)ff_realNumCores()));
+        ff_send_out(A);
+        return EOS;
+    }
+};
 
 
 int main(int argc, char * argv[]) {
@@ -88,11 +97,11 @@ int main(int argc, char * argv[]) {
         ranges[i].end = delta * (i + 1);
     }
     ranges[nw-1].end = v_len - 2;
-    
+    /* 
     // Range checker
     for (auto i = ranges.begin(); i != ranges.end(); i++){cout<<" Start "<<i->start<< " " << i->end;}
     cout<<endl;
-
+ */
     for (auto i = 0; i < iterations; i++)
     {
         for (auto j = 0; j < nw; j++)

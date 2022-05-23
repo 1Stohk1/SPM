@@ -39,7 +39,7 @@ int main() {
     Source Node1;
     F Node2;
     Sink Node3;
-    ff::ff_Pipe<> pipe(Node1, Node2, Node3);
+    ff_Pipe<> pipe(Node1, Node2, Node3);
 
     pipe.run_and_wait_end();
     return (0);
