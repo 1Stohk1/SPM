@@ -1,29 +1,50 @@
 #include <iostream>
 #include <stdlib.h>
 #include <vector>
+#include <barrier>
 #include "utimer.cpp"
 
 using namespace std;
 
 const int MAX = 10;
 
-void thread_pool() {
-    Item task;
-        while (true){
-            {
-                unique_lock<mutex> lk(my_mutex);
-                search_task.wait(lk, [&]{return not(my_q.empty());});
-                task = my_q.front();
-                my_q.pop();
-            }
-        if (task.eol)
-            return;
+void on_completion()
+{
+    // locking not needed here
+    static auto phase = "... done\n"
+                        "Cleaning up...\n";
+    std::cout << phase;
+    phase = "... done\n";
+}
+
+class Jacobi
+{
+private:
+    int num_worker;
+    int n_size;
+    vector<float> x_old;
+    vector<float> x_curr;
+
+public:
+    // constructor three
+    Jacobi(int nw, int n = 0)
+    {
+        num_worker = nw;
+        n_size = n;
+        for (size_t i = 0; i < n; i++)
         {
-            unique_lock<mutex> lk(my_mutex);
-            task.f();
+            x_old.push_back(rand() % MAX);
         }
     }
-}
+    void display(const Jacobi &j)
+    {
+        for (size_t i = 0; i < j.n_size; i++)
+        {
+            cout << x_old[i] << " ";
+        }
+        cout << endl;
+    }
+};
 
 void printMatrix(float *matrix, int n)
 {
@@ -57,7 +78,7 @@ void reduce(float *A, int n, vector<float> x, vector<float> &x_old)
     }
 }
 
-void Jacobi(float *A, int n, vector<float> &x, vector<float> &x_old, vector<float> b)
+void Jacobifun(float *A, int n, vector<float> &x, vector<float> &x_old, vector<float> b)
 {
     for (size_t i = 0; i < n; i++)
     {
@@ -88,21 +109,23 @@ int main(int argc, char *argv[])
         sol[i] = rand() % MAX; // Creating the solution of the system randomically
         for (auto j = 0; j < n_dim; j++)
         {
-            if (i == j) A[i][j] = MAX + (rand() % MAX); // Making the diagonally strongly dominant
-            else A[i][j] = 1 + (rand() % MAX); // Continuing to fill the matrix randomically
+            if (i == j)
+                A[i][j] = MAX + (rand() % MAX); // Making the diagonally strongly dominant
+            else
+                A[i][j] = 1 + (rand() % MAX); // Continuing to fill the matrix randomically
         }
     }
     for (auto i = 0; i < n_dim; i++)
         for (auto j = 0; j < n_dim; j++)
             b[i] += A[i][j] * sol[j]; // Computing the solution vector b of the system
 
-    {// Solving the system sequentially
-    timer_raii tim("Sequentially " + to_string(iterations) + " iterations of the Jacobi have been");
+    { // Solving the system sequentially
+        timer_raii tim("Sequentially " + to_string(iterations) + " iterations of the Jacobi have been");
         for (size_t iter = 0; iter < iterations; iter++)
         {
             reduce(reinterpret_cast<float *>(A), n_dim, x, x_old);
             printVec(x_old, n_dim, "Printing sum at the iteration " + to_string(iter));
-            Jacobi(reinterpret_cast<float *>(A), n_dim, x, x_old, b);
+            Jacobifun(reinterpret_cast<float *>(A), n_dim, x, x_old, b);
             printVec(x, n_dim, "Printing X at the iteration " + to_string(iter));
         }
     }
@@ -110,4 +133,6 @@ int main(int argc, char *argv[])
     printVec(x, n_dim, "Printing x");
     printVec(b, n_dim, "Printing b");
     printVec(sol, n_dim, "Printing solution");
+    Jacobi jac(1, 4);
+    jac.display(jac);
 }
