@@ -82,9 +82,7 @@ int main(int argc, char *argv[])
         for (size_t iter = 0; iter < iterations; iter++)
         {
             reduce(reinterpret_cast<float *>(A), n_dim, x, x_old);
-            printVec(x_old, n_dim, "Printing sum at the iteration " + to_string(iter));
             Jacobi(reinterpret_cast<float *>(A), n_dim, x, x_old, b);
-            printVec(x, n_dim, "Printing X at the iteration " + to_string(iter));
         }
     }
     printMatrix(reinterpret_cast<float *>(A), n_dim);

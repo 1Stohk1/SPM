@@ -4,6 +4,7 @@
 #include <thread>
 #include <mutex>
 #include <barrier>
+#include <functional>
 
 using namespace std;
 
