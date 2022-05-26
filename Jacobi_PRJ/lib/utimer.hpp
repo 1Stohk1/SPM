@@ -1,10 +1,8 @@
 #include <iostream>
 #include <chrono>
-#include <thread>
 
-
-#define START(timename) auto timename = std::chrono::system_clock::now();
-#define STOP(timename,elapsed)  auto elapsed = std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::system_clock::now() - timename).count();
+//#define START(timename) auto timename = std::chrono::system_clock::now();
+//#define STOP(timename,elapsed)  auto elapsed = std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::system_clock::now() - timename).count();
 
 
 class timer_raii {
@@ -28,8 +26,7 @@ public:
   }
 
   ~timer_raii() {
-    stop =
-      std::chrono::system_clock::now();
+    stop = std::chrono::system_clock::now();
     std::chrono::duration<double> elapsed =
       stop - start;
     auto musec =
