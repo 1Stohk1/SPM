@@ -8,6 +8,7 @@ const int HI = 20;
 const int LO = -9;
 
 const bool SHOW = false;
+const double THRESHOLD = 0.9;
 
 class Linear_System
 {
@@ -65,9 +66,9 @@ public:
         double dot = 0.0, denom_a = 0.0, denom_b = 0.0;
         for (unsigned int i = 0u; i < n_size; ++i)
         {
-            dot += sol[i] * b[i];
+            dot += sol[i] * x_curr[i];
             denom_a += sol[i] * sol[i];
-            denom_b += b[i] * b[i];
+            denom_b += x_curr[i] * x_curr[i];
         }
         return dot / (sqrt(denom_a) * sqrt(denom_b));
     }
@@ -87,16 +88,15 @@ public:
             printVec(x_curr, n_size, "VECTOR x");
             printVec(sol, n_size, "VECTOR of solution");
         }
-        std::cout << (cosine_similarity() < 0.0001 ? "Everything fine" : "Something went wrong") << std::endl;
+        std::cout << (abs(cosine_similarity()) > THRESHOLD ? "Everything fine" : "Something went wrong") << std::endl;
     }
 
     ~Linear_System()
     {
-        std::cout<<"has been called"<<std::endl;
-/*         for (int i = 0; A[i] != NULL; i++)
+        for (int i = 0; A[i] != NULL; i++)
         {
             free(A[i]);
         }
-        free(A); */
+        free(A);
     }
 };

@@ -71,11 +71,6 @@ int main(int argc, char *argv[])
         }
     };
 
-    function<void()> update = [&]()
-    {
-        ls.x_old = ls.x_curr;
-    };
-
     auto stopTp = [&]()
     {
         EOL = true;
@@ -104,7 +99,7 @@ int main(int argc, char *argv[])
             {
                 vf[i].get();
             }
-            update();
+            ls.update();
         }
         stopTp();
         for (auto &t : threads)
@@ -113,6 +108,6 @@ int main(int argc, char *argv[])
                 t.join();
         }
     }
-    ls.print_results(false);
+    ls.print_results();
     return 0;
 }

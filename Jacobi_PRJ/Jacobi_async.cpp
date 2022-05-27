@@ -37,11 +37,6 @@ int main(int argc, char *argv[])
         return 0;
     };
 
-    function<void()> update = [&]()
-    {
-        ls.x_old = ls.x_curr;
-    };
-
     vector<future<void>> workers(nw);
 
     {
@@ -63,7 +58,7 @@ int main(int argc, char *argv[])
                     cout << "Got " << e.what() << endl;
                 }
             }
-            update();
+            ls.update();
         }
     }
     ls.print_results();

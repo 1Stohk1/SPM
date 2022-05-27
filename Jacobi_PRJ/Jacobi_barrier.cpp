@@ -30,10 +30,12 @@ int main(int argc, char *argv[])
     srand(atoi(argv[4]));
 
     Linear_System ls(n_dim);
-
-    function<void()> pt(bind(&Linear_System::update, ls)); //check why it calls the destructor
     
-    barrier sync_point(nw, bind(&Linear_System::update, ls));
+    function<void()> upda = [&](){
+        ls.x_old = ls.x_curr;
+    };
+
+    barrier sync_point(nw, upda);
 
     function<void(RANGE)> Jacobi = [&](RANGE range)
     {
