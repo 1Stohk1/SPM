@@ -10,17 +10,18 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    if (argc == 1)
+    if (argc != 5)
     {
-        cout << "Usage is: " << argv[0] << " n-dim iterations nw seed" << endl;
+        cout << "Usage is: " << argv[0] << " Dimension_of_the_system(int) Number_of_iterations(int) Number_Workers(int) Check_Results[0/1](bool)" << endl;
         return (0);
     }
     int n_dim = atoi(argv[1]);
     int iterations = atoi(argv[2]);
     int nw = atoi(argv[3]);
-    srand(atoi(argv[4]));
+    bool check = (atoi(argv[4]) == 0 ? false : true);
+    srand(123);
 
-    Linear_System ls(n_dim);
+    Linear_System ls(n_dim, check);
 
     function<void(int)> Jacobi = [&](int id)
     {

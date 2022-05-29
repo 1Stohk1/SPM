@@ -18,7 +18,8 @@ PRELDFLAGS 	= LD_PRELOAD=${DIR}/jemalloc/lib/libjemalloc.so.2
 TARGETS 	=	build/jacobi_sequential \
 				build/jacobi_threadPool \
 				build/jacobi_async \
-				build/jacobi_barrier 
+				build/jacobi_barrier \
+				build/jacobi_fastflow
 
 
 .PHONY: all clean
@@ -34,10 +35,13 @@ build/jacobi_threadPool: Jacobi_threadPool.cpp
 	$(CXX) $(CXXFLAGS) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
 
 build/jacobi_async: Jacobi_async.cpp
-	$(CXX) $(CXXFLAGS) $(INCLUDES) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
+	$(CXX) $(CXXFLAGS) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
 	
 build/jacobi_barrier: Jacobi_barrier.cpp
-	$(CXX11) $(CXXFLAGS) $(INCLUDES) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
+	$(CXX11) $(CXXFLAGS) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
+	
+build/jacobi_fastflow: Jacobi_fastflow.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
 
 clean:
 	rm -rf build/*

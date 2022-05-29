@@ -39,17 +39,18 @@ void thread_pool()
 
 int main(int argc, char *argv[])
 {
-    if (argc == 1)
+    if (argc != 5)
     {
-        cout << "Usage is: " << argv[0] << " n-dim iterations nw seed" << endl;
+        cout << "Usage is: " << argv[0] << " Dimension_of_the_system(int) Number_of_iterations(int) Number_Workers(int) Check_Results[0/1](bool)" << endl;
         return (0);
     }
     int n_dim = atoi(argv[1]);
     int iterations = atoi(argv[2]);
     int nw = atoi(argv[3]);
-    srand(atoi(argv[4]));
+    bool check = (atoi(argv[4]) == 0 ? false : true);
+    srand(123);
 
-    Linear_System ls(n_dim);
+    Linear_System ls(n_dim, check);
 
     auto submit = [&](packaged_task<void()> &f)
     {
@@ -86,7 +87,7 @@ int main(int argc, char *argv[])
     vector<future<void>> vf(nw);
 
     {
-        timer_raii tim("Jacobi (thread_pool) with " + to_string(iterations) + " iterations");
+        timer_raii tim("Jacobi (thread_pool) with " + to_string(iterations) + " iterations and " + to_string(nw) + " nw");
         for (int iter = 0; iter < iterations; iter++)
         {
             for (int id = 0; id < nw; id++)

@@ -7,13 +7,13 @@
 const int HI = 20;
 const int LO = -9;
 
-const bool SHOW = false;
 const double THRESHOLD = 0.9;
 
 class Linear_System
 {
 private:
     int n_size;
+    bool check;
     void printVec(std::vector<float> vec, int n, std::string mex)
     {
         std::cout << mex << std::endl;
@@ -29,9 +29,10 @@ public:
     std::vector<float> sol;
     std::vector<float> b;
     // constructor three
-    Linear_System(int n)
+    Linear_System(int n, bool show)
     {
         n_size = n;
+        check = show;
         A = (float **)calloc(n_size, 1 + sizeof *A); // alloc one extra ptr
         for (int i = 0; i < n_size; i++)
             A[i] = (float *)calloc(n_size, sizeof **A);
@@ -75,7 +76,7 @@ public:
 
     void print_results()
     {
-        if (SHOW)
+        if (check)
         {
             std::cout << "MATRIX A" << std::endl;
             for (int i = 0; i < n_size; i++)
