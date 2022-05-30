@@ -7,7 +7,7 @@
 const int HI = 20;
 const int LO = -9;
 
-const double THRESHOLD = 0.9;
+const double THRESHOLD = 0.995;
 
 class Linear_System
 {

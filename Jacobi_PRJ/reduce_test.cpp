@@ -36,8 +36,10 @@
 #include <ff/ff.hpp>
 #include <ff/parallel_for.hpp>
 #include "lib/utimer.hpp"
+#include "lib/linear_system.hpp"
 
 using namespace ff;
+using namespace std;
 
 struct ReductionVars
 {
@@ -67,55 +69,43 @@ struct ReductionVars
 
 int main(int argc, char *argv[])
 {
-    int arraySize = 10000000;
-    int nworkers = 2;
-    if (argc > 1)
+    if (argc != 5)
     {
-        if (argc < 3)
-        {
-            printf("use: %s arraysize nworkers\n", argv[0]);
-            return -1;
-        }
-        arraySize = atoi(argv[1]);
-        nworkers = atoi(argv[2]);
+        cout << "Usage is: " << argv[0] << " Dimension_of_the_system(int) Number_of_iterations(int) Number_Workers(int) Check_Results[0/1](bool)" << endl;
+        return (0);
     }
-    if (nworkers <= 0)
-    {
-        printf("Wrong parameters values\n");
-        return -1;
-    }
+    int n_dim = atoi(argv[1]);
+    int iterations = atoi(argv[2]);
+    int nw = atoi(argv[3]);
+    bool check = (atoi(argv[4]) == 0 ? false : true);
+    srand(123);
 
-    // creates the array
-    double *A = new double[arraySize];
+    Linear_System ls(n_dim, check);
 
     ReductionVars R, Rzero;
-    ParallelForReduce<ReductionVars> pfr(nworkers);
+    ParallelForReduce<ReductionVars> pfr(nw);
 
-    // init data
-    for (int j = 0; j < arraySize; ++j)
-        A[j] = 3.14 * j;
+    auto reduceF = [](ReductionVars &R, const ReductionVars &r)
     {
-        timer_raii tim ("parallelo");
-        auto reduceF = [](ReductionVars &R, const ReductionVars &r)
-        {
-            R += r.sumd();
-        };
-        pfr.parallel_reduce(
-            R, Rzero, 0, arraySize, 1, 0, [&](const long i, ReductionVars &R)
-            { R += A[i]; },
-            reduceF, nworkers);
-
-        printf("R (double)\tsum=%g \n", R.sumd());
-    }
-    R = 0;
+        R += r.sumd();
+    };
     {
-        timer_raii tim(" iterativo");
-        for (int i = 0; i < arraySize; i++)
+        timer_raii tim("parallelo");
+        for (int row = 0; row < n_dim; row++)
         {
-            R += A[i];
+            pfr.parallel_reduce(
+                R, Rzero, 0, n_dim, 1, 0, [&](const long i, ReductionVars &R)
+                {
+                if (row != i)
+                {
+                    R += ls.A[row][i] * ls.x_old[i];
+                } },
+                reduceF, nw);
+            ls.x_curr[row] = (ls.b[row] - R.sumd()) / ls.A[row][row];
+            R = 0;
+            ls.update();
         }
     }
-
-    printf("R (double)\tsum=%g \n", R.sumd());
+    ls.print_results();
     return 0;
 }
