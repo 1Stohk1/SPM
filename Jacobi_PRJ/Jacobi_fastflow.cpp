@@ -21,13 +21,14 @@ int main(int argc, char *argv[])
     int nw = atoi(argv[3]);
     bool check = (atoi(argv[4]) == 0 ? false : true);
     srand(123);
-    
+
     Linear_System ls(n_dim, check);
-    
-    ff::ParallelFor pf(nw);
 
     {
-        timer_raii tim("Jacobi (FastFlow) with " + to_string(iterations) + " iterations and " + to_string(nw) + " nw");
+        timer_raii tim("Jacobi (FastFlow ParallelFor) with " + to_string(iterations) + " iterations and " + to_string(nw) + " nw");
+
+        ff::ParallelFor pf(nw);
+
         for (int i = 0; i < iterations; i++)
         {
             pf.parallel_for(0, n_dim, 1, n_dim / nw, [&](int id)

@@ -16,8 +16,12 @@ OPTFLAGS	= -finline-functions -w -DNDEBUG -O3
 PRELDFLAGS 	= LD_PRELOAD=${DIR}/jemalloc/lib/libjemalloc.so.2
 
 TARGETS 	=	build/jacobi_sequential \
-				build/jacobi_std \
-				build/jacobi_fastflow \
+				build/jacobi_threadPool \
+				build/jacobi_async \
+				build/jacobi_barrier \
+				build/jacobi_fastflowbar \
+				build/jacobi_fastflowpar
+
 
 .PHONY: all clean
 
@@ -28,10 +32,19 @@ all: $(TARGETS)
 build/jacobi_sequential: Jacobi_sequential.cpp
 	$(CXX) $(CXXFLAGS) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
 
-build/jacobi_std: Jacobi_std.cpp
+build/jacobi_threadPool: Jacobi_threadPool.cpp
+	$(CXX) $(CXXFLAGS) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
+
+build/jacobi_async: Jacobi_async.cpp
+	$(CXX) $(CXXFLAGS) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
+	
+build/jacobi_barrier: Jacobi_barrier.cpp
 	$(CXX11) $(CXXFLAGS) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
 	
-build/jacobi_fastflow: Jacobi_fastflow.cpp
+build/jacobi_fastflowbar: Jacobi_fastflowBAR.cpp
+	$(CXX) $(CXXFLAGS) $(INCLUDES) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
+
+build/jacobi_fastflowpar: Jacobi_fastflowPAR.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDES) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
 
 clean:
