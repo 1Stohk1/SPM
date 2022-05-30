@@ -12,7 +12,6 @@ const double THRESHOLD = 0.995;
 class Linear_System
 {
 private:
-    int n_size;
     bool check;
     void printVec(std::vector<float> vec, int n, std::string mex)
     {
@@ -23,6 +22,7 @@ private:
     }
 
 public:
+    int n_size;
     float **A;
     std::vector<float> x_old;
     std::vector<float> x_curr;
