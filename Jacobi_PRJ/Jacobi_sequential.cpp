@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
     };
 
     { // Solving the system sequentially
-        timer_raii tim("Jacobi (sequentially) with " + to_string(iterations) + " iterations");
+        timer_raii tim("Jacobi (sequential) " + to_string(n_dim) + " N, " + to_string(iterations) + " Iters");
         for (size_t iter = 0; iter < iterations; iter++)
         {
             Jacobi();

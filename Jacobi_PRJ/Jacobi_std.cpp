@@ -52,8 +52,7 @@ int main(int argc, char *argv[])
     };
 
     {
-        timer_raii tim("Jacobi (std::barrier) with " + to_string(iterations) + " iterations and " + to_string(nw) + " nw");
-
+        timer_raii tim("Jacobi (std::barrier) " + to_string(n_dim) + " N, " + to_string(iterations) + " Iters, " + to_string(nw) + " Ws");
         vector<thread> tids(nw);
 
         for (int i = 0; i < nw; ++i)

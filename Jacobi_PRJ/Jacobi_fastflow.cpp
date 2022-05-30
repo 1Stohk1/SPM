@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
     Linear_System ls(n_dim, check);
 
     {
-        timer_raii tim("Jacobi (FastFlow ParallelFor) with " + to_string(iterations) + " iterations and " + to_string(nw) + " nw");
+        timer_raii tim("Jacobi (ff::ParallelFor) " + to_string(n_dim) + " N, " + to_string(iterations) + " Iters, " + to_string(nw) + " Ws");
 
         ff::ParallelFor pf(nw);
 
