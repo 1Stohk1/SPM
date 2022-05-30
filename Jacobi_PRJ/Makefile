@@ -17,7 +17,7 @@ PRELDFLAGS 	= LD_PRELOAD=${DIR}/jemalloc/lib/libjemalloc.so.2
 
 TARGETS 	=	build/jacobi_sequential \
 				build/jacobi_std \
-				build/jacobi_fastflow \
+				build/jacobi_fastflow
 
 .PHONY: all clean
 
@@ -29,7 +29,7 @@ build/jacobi_sequential: Jacobi_sequential.cpp
 	$(CXX) $(CXXFLAGS) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
 
 build/jacobi_std: Jacobi_std.cpp
-	$(CXX11) $(CXXFLAGS) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
+	$(CXX) $(CXXFLAGS) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
 	
 build/jacobi_fastflow: Jacobi_fastflow.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDES) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
