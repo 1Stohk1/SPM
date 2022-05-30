@@ -1,7 +1,7 @@
 
 #!/bin/bash
 NW=128
-MUL=10
+MUL=20
 ITERS=100
 
 for (( NW=1; NW<=128; NW++ )); do

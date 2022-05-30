@@ -1,7 +1,7 @@
 #!/bin/bash
 NW=128
-DIM=640
 ITERS=100
+DIM=1280
 
 for (( NW=1; NW<=128; NW++ )); do
     ./build/jacobi_std $DIM $ITERS $NW 0
