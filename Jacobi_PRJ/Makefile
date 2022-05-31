@@ -29,7 +29,7 @@ build/jacobi_sequential: Jacobi_sequential.cpp
 	$(CXX) $(CXXFLAGS) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
 
 build/jacobi_std: Jacobi_std.cpp
-	$(CXX) $(CXXFLAGS) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
+	$(CXX11) $(CXXFLAGS) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)
 	
 build/jacobi_fastflow: Jacobi_fastflow.cpp
 	$(CXX) $(CXXFLAGS) $(INCLUDES) $(OPTFLAGS) -o $@ $^ $(LDFLAGS)

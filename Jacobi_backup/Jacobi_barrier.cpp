@@ -25,28 +25,36 @@ int main(int argc, char *argv[])
     srand(123);
 
     Linear_System ls(n_dim, check);
-    
-    function<void()> update = [&](){
+
+    function<void()> update = [&]()
+    {
         ls.x_old = ls.x_curr;
     };
 
     barrier sync_point(nw, update);
+    std::chrono::system_clock::time_point start;
+    std::chrono::system_clock::time_point stop;
+    std::chrono::duration<double> elapsed;
 
-    function<void(int)> Jacobi = [&](int id)
+        function<void(int)>
+            Jacobi = [&](int id)
     {
         for (int t = 0; t < iterations; t++)
         {
-            for (int row = id; row < n_dim; row+=nw)
+            for (int row = id; row < n_dim; row += nw)
             {
-                ls.x_curr[row] = 0;
+                ls.x_curr[row] = ls.b[row];
                 for (size_t col = 0; col < n_dim; col++)
                 {
                     if (row != col)
-                        ls.x_curr[row] += ls.A[row][col] * ls.x_old[col];
+                        ls.x_curr[row] -= ls.A[row][col] * ls.x_old[col];
                 }
-                ls.x_curr[row] = (ls.b[row] - ls.x_curr[row]) / ls.A[row][row];
+                ls.x_curr[row] = ls.x_curr[row] / ls.A[row][row];
             }
+            start = std::chrono::system_clock::now();
             sync_point.arrive_and_wait();
+            stop = std::chrono::system_clock::now();
+            elapsed += stop - start;
         }
         return;
     };
@@ -66,5 +74,6 @@ int main(int argc, char *argv[])
             t.join();
         }
     }
+    cout<<std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count()<<endl;
     ls.print_results();
 }

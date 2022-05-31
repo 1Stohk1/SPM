@@ -28,13 +28,13 @@ public:
         {
             for (int i = get_my_id(); i < ls->n_size; i += nworkers)
             {
-                ls->x_curr[i] = 0;
+                ls->x_curr[i] = ls->b[i];
                 for (size_t col = 0; col < ls->n_size; col++)
                 {
                     if (i != col)
-                        ls->x_curr[i] += ls->A[i][col] * ls->x_old[col];
+                        ls->x_curr[i] -= ls->A[i][col] * ls->x_old[col];
                 }
-                ls->x_curr[i] = (ls->b[i] - ls->x_curr[i]) / ls->A[i][i];
+                ls->x_curr[i] = ls->x_curr[i] / ls->A[i][i];
             }
             BARRIER;
             ls->update();

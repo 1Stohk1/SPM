@@ -12,7 +12,7 @@ const double THRESHOLD = 0.995;
 class Linear_System
 {
 private:
-    bool check;
+    bool print;
     void printVec(std::vector<float> vec, int n, std::string mex)
     {
         std::cout << mex << std::endl;
@@ -32,7 +32,7 @@ public:
     Linear_System(int n, bool show)
     {
         n_size = n;
-        check = show;
+        print = show;
         A = (float **)calloc(n_size, 1 + sizeof *A); // alloc one extra ptr
         for (int i = 0; i < n_size; i++)
             A[i] = (float *)calloc(n_size, sizeof **A);
@@ -76,7 +76,7 @@ public:
 
     void print_results()
     {
-        if (check)
+        if (print)
         {
             std::cout << "MATRIX A" << std::endl;
             for (int i = 0; i < n_size; i++)

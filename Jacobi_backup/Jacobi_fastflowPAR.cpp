@@ -33,13 +33,13 @@ int main(int argc, char *argv[])
         {
             pf.parallel_for(0, n_dim, 1, n_dim / nw, [&](int id)
                             {
-            ls.x_curr[id] = 0;
+            ls.x_curr[id] = ls.b[id];
             for (size_t col = 0; col < n_dim; col++)
             {
                 if (id != col)
-                    ls.x_curr[id] += ls.A[id][col] * ls.x_old[col];
+                    ls.x_curr[id] -= ls.A[id][col] * ls.x_old[col];
             }
-            ls.x_curr[id] = (ls.b[id] - ls.x_curr[id]) / ls.A[id][id]; });
+            ls.x_curr[id] = ls.x_curr[id] / ls.A[id][id]; });
             ls.update();
         }
     }

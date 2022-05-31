@@ -25,13 +25,13 @@ int main(int argc, char *argv[])
     {
         for (size_t row = 0; row < n_dim; row++)
         {
-            ls.x_curr[row] = 0;
+            ls.x_curr[row] = ls.b[row];
             for (size_t col = 0; col < n_dim; col++)
             {
                 if (row != col)
-                    ls.x_curr[row] += ls.A[row][col] * ls.x_old[col];
+                    ls.x_curr[row] -= ls.A[row][col] * ls.x_old[col];
             }
-            ls.x_curr[row] = (ls.b[row] - ls.x_curr[row]) / ls.A[row][row];
+            ls.x_curr[row] = ls.x_curr[row] / ls.A[row][row];
         }
         ls.x_old = ls.x_curr;
     };
