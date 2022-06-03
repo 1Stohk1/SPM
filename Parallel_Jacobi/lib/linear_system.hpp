@@ -22,6 +22,13 @@ private:
     }
 
 public:
+    /**
+     * @brief Construct of a Linear System object
+     *
+     * @param n dimension of the matrix and vectors, @param show boolean for debugging purposes
+     *
+     * It enables to create a system of equations that is solvable approximating the x vector using the D matrix of A
+     */
     int n_size;
     float **A;
     std::vector<float> x_old;
@@ -58,11 +65,19 @@ public:
     }
 
     void update()
+    /**
+     * @brief Update the support vector @param x_old
+     */
     {
         x_old = x_curr;
     }
 
     double cosine_similarity()
+    /**
+     * @brief Computes the cosine similarity (greater is better) between the current vector of x and the true vector of solutions
+     * 
+     * @return The cosine similarity in double
+     */
     {
         double dot = 0.0, denom_a = 0.0, denom_b = 0.0;
         for (unsigned int i = 0u; i < n_size; ++i)
@@ -75,6 +90,9 @@ public:
     }
 
     void print_results()
+    /**
+     * @brief Computes the cosine similarity to check if everything is flowing well, further more if debugging mode is ON it prints the System
+     */
     {
         if (print)
         {
@@ -93,6 +111,9 @@ public:
     }
 
     ~Linear_System()
+    /**
+     * @brief Exiting from the scope the Linear System destructor is called and it free the memory occupied by the matrix calloc()
+     */
     {
         for (int i = 0; A[i] != NULL; i++)
         {

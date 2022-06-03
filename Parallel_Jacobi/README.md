@@ -29,20 +29,19 @@ Everything has been implemented in three different ways:
  ┃ ┣ 📜jacobi_sequential
  ┃ ┗ 📜jacobi_std
  ┣ 📂experiments
- ┃ ┣ 📜ex_amdahl.sh
- ┃ ┣ 📜ex_average.sh
- ┃ ┗ 📜ex_gustaffson.sh
+ ┃ ┣ 📜amdahl.sh
+ ┃ ┣ 📜average.sh
+ ┃ ┗ 📜gustaffson.sh
  ┣ 📂fastflow
  ┃ ┗ ...
  ┣ 📂lib
  ┃ ┣ 📜linear_system.hpp
  ┃ ┗ 📜utimer.hpp
  ┣ 📂results
- ┃ ┣ 📜Results.xlsx
+ ┃ ┣ 📜Results.xlsx  # Excel file in which are saved the plots and all the data for comparison purposes
  ┃ ┣ 📜amdahl.txt
  ┃ ┣ 📜amdahl1.txt
  ┃ ┗ 📜gustaf.txt
- ┣ 📜CMakeLists.txt
  ┣ 📜Jacobi_fastflow.cpp
  ┣ 📜Jacobi_sequential.cpp
  ┣ 📜Jacobi_std.cpp
@@ -55,7 +54,7 @@ Everything has been implemented in three different ways:
 To compile the program, simply launch from the base directory
 
 ```bash
-    make all
+make all
 ```
 
 Three executable will be created in the build folder, respectively for the sequential, parallel thread and parallel fastflow version.
@@ -63,7 +62,7 @@ Three executable will be created in the build folder, respectively for the seque
 To run the builds, launch from the base directory
 
 ```bash
-    ./build/executable dim iters nw check[0/1]
+./build/executable dim iters nw check[0/1]
 ``` 
 
 where
@@ -71,14 +70,20 @@ where
 - **dim**: Shape of the square matrix and of the vectors.
 - **iters**: Number of cycle to iterate the Jacobi method.
 - **nw**: stands for the maximum parallelism degree to be used. Do not specify this if you are running the sequential version.
-- **check**: Boolean testing puposes [0] => false, the system will not be shown; [1] => true, the system will be printed.
+- **check**: Boolean for testing puposes: [0] => false, the system will not be shown; [1] => true, the system will be printed.
 
+Instead to run the experiments scripts run
+
+```bash 
+bash ./experiments/[amdahl || gustafsson || average].sh
+```
 
 ## Results
 
-Below are some results of the speedup achieved on a XEON Phi machine, hosting 32 physical cores with 4-way hyperthreading. Hence the maximum **nw** was set to 128 threads.
+Below are some results of the speedup achieved on a XEON Phi machine, hosting 32 physical cores with 4-way hyperthreading. Hence the maximum **nw** was set to 128 threads.  
+The first plot compare the sequential code with ff and std parallel implementations with a matrix of shape(2560, 2560) insted in the second shape(5120, 5120).
 
 <p align="center">
-<img src="results/Sp_2560.jpg" height="500" />
-<img src="results/Sp_5120.jpg" height="500" />
+<img src="results/Sp_2560.jpg" width="700" />
+<img src="results/Sp_5120.jpg" width="700" />
 </p>
