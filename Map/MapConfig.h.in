@@ -1,3 +1,0 @@
-// the configured options and settings for Map
-#define MAP_VERSION_MAJOR @Map_VERSION_MAJOR@
-#define MAP_VERSION_MINOR @Map_VERSION_MINOR@
