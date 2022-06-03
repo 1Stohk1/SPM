@@ -32,13 +32,10 @@ int main(int argc, char *argv[])
     };
 
     barrier sync_point(nw, update);
-    std::chrono::system_clock::time_point start;
-    std::chrono::system_clock::time_point stop;
-    std::chrono::duration<double> elapsed;
-
         function<void(int)>
             Jacobi = [&](int id)
     {
+    long long microseconds = 0;
         for (int t = 0; t < iterations; t++)
         {
             for (int row = id; row < n_dim; row += nw)
@@ -50,12 +47,13 @@ int main(int argc, char *argv[])
                         ls.x_curr[row] -= ls.A[row][col] * ls.x_old[col];
                 }
                 ls.x_curr[row] = ls.x_curr[row] / ls.A[row][row];
-            }
-            start = std::chrono::system_clock::now();
+            }            
+            auto start = std::chrono::high_resolution_clock::now();
             sync_point.arrive_and_wait();
-            stop = std::chrono::system_clock::now();
-            elapsed += stop - start;
+            auto elapsed = std::chrono::high_resolution_clock::now() - start;
+            microseconds += std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
         }
+    cout << "elapsed " << microseconds << "\n The avg is " << microseconds << endl;
         return;
     };
 
@@ -74,6 +72,6 @@ int main(int argc, char *argv[])
             t.join();
         }
     }
-    cout<<std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count()<<endl;
+
     ls.print_results();
 }

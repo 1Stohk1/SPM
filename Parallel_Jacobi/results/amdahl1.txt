@@ -1,0 +1,384 @@
+Jacobi (std::barrier) 5120 N, 100 Iters, 1 Ws computed in 4311576 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 2 Ws computed in 2327877 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 3 Ws computed in 2187605 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 4 Ws computed in 1640205 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 5 Ws computed in 1386867 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 6 Ws computed in 1188209 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 7 Ws computed in 1110941 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 8 Ws computed in 1023965 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 9 Ws computed in 1001713 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 10 Ws computed in 895618 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 11 Ws computed in 873687 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 12 Ws computed in 798317 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 13 Ws computed in 850737 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 14 Ws computed in 779371 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 15 Ws computed in 804209 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 16 Ws computed in 787533 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 17 Ws computed in 760660 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 18 Ws computed in 755703 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 19 Ws computed in 762797 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 20 Ws computed in 727685 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 21 Ws computed in 733103 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 22 Ws computed in 699761 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 23 Ws computed in 680663 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 24 Ws computed in 637315 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 25 Ws computed in 718637 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 26 Ws computed in 668347 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 27 Ws computed in 591512 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 28 Ws computed in 632174 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 29 Ws computed in 667425 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 30 Ws computed in 665758 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 31 Ws computed in 673919 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 32 Ws computed in 653821 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 33 Ws computed in 684417 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 34 Ws computed in 694592 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 35 Ws computed in 723363 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 36 Ws computed in 684991 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 37 Ws computed in 682962 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 38 Ws computed in 694766 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 39 Ws computed in 730131 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 40 Ws computed in 694455 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 41 Ws computed in 685689 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 42 Ws computed in 675518 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 43 Ws computed in 704703 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 44 Ws computed in 670006 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 45 Ws computed in 720924 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 46 Ws computed in 690273 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 47 Ws computed in 721425 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 48 Ws computed in 697368 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 49 Ws computed in 693055 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 50 Ws computed in 692833 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 51 Ws computed in 649599 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 52 Ws computed in 698574 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 53 Ws computed in 698966 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 54 Ws computed in 688410 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 55 Ws computed in 700259 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 56 Ws computed in 688501 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 57 Ws computed in 679636 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 58 Ws computed in 675996 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 59 Ws computed in 696479 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 60 Ws computed in 716582 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 61 Ws computed in 669280 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 62 Ws computed in 716432 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 63 Ws computed in 732383 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 64 Ws computed in 672876 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 65 Ws computed in 689762 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 66 Ws computed in 710336 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 67 Ws computed in 710302 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 68 Ws computed in 730744 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 69 Ws computed in 719966 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 70 Ws computed in 686089 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 71 Ws computed in 698379 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 72 Ws computed in 711801 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 73 Ws computed in 721200 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 74 Ws computed in 693371 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 75 Ws computed in 723885 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 76 Ws computed in 711489 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 77 Ws computed in 739157 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 78 Ws computed in 730617 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 79 Ws computed in 701050 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 80 Ws computed in 720546 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 81 Ws computed in 744855 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 82 Ws computed in 739460 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 83 Ws computed in 717894 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 84 Ws computed in 718475 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 85 Ws computed in 734993 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 86 Ws computed in 724853 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 87 Ws computed in 729234 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 88 Ws computed in 748577 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 89 Ws computed in 716798 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 90 Ws computed in 738713 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 91 Ws computed in 706291 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 92 Ws computed in 722950 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 93 Ws computed in 739126 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 94 Ws computed in 739277 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 95 Ws computed in 789007 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 96 Ws computed in 740197 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 97 Ws computed in 754970 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 98 Ws computed in 698789 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 99 Ws computed in 733187 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 100 Ws computed in 777004 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 101 Ws computed in 877592 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 102 Ws computed in 735483 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 103 Ws computed in 749632 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 104 Ws computed in 764443 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 105 Ws computed in 792496 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 106 Ws computed in 772723 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 107 Ws computed in 764497 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 108 Ws computed in 851563 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 109 Ws computed in 790116 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 110 Ws computed in 734565 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 111 Ws computed in 733437 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 112 Ws computed in 814437 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 113 Ws computed in 741377 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 114 Ws computed in 798553 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 115 Ws computed in 815779 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 116 Ws computed in 776919 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 117 Ws computed in 787667 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 118 Ws computed in 789521 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 119 Ws computed in 785645 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 120 Ws computed in 717426 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 121 Ws computed in 741694 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 122 Ws computed in 795542 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 123 Ws computed in 734710 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 124 Ws computed in 807964 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 125 Ws computed in 756257 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 126 Ws computed in 765863 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 127 Ws computed in 739196 usec 
+Jacobi (std::barrier) 5120 N, 100 Iters, 128 Ws computed in 753889 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 1 Ws computed in 4291002 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 2 Ws computed in 2242161 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 3 Ws computed in 1588753 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 4 Ws computed in 1255582 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 5 Ws computed in 1036064 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 6 Ws computed in 891962 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 7 Ws computed in 783487 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 8 Ws computed in 733940 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 9 Ws computed in 635305 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 10 Ws computed in 633625 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 11 Ws computed in 595620 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 12 Ws computed in 619166 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 13 Ws computed in 653572 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 14 Ws computed in 650510 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 15 Ws computed in 559650 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 16 Ws computed in 574306 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 17 Ws computed in 588926 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 18 Ws computed in 593491 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 19 Ws computed in 574719 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 20 Ws computed in 553146 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 21 Ws computed in 570601 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 22 Ws computed in 516650 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 23 Ws computed in 530265 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 24 Ws computed in 544838 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 25 Ws computed in 662131 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 26 Ws computed in 582558 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 27 Ws computed in 550485 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 28 Ws computed in 560618 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 29 Ws computed in 554992 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 30 Ws computed in 583637 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 31 Ws computed in 620390 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 32 Ws computed in 616961 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 33 Ws computed in 559474 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 34 Ws computed in 571709 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 35 Ws computed in 631147 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 36 Ws computed in 594822 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 37 Ws computed in 514987 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 38 Ws computed in 548514 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 39 Ws computed in 576992 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 40 Ws computed in 576962 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 41 Ws computed in 579524 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 42 Ws computed in 603270 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 43 Ws computed in 589188 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 44 Ws computed in 614774 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 45 Ws computed in 597420 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 46 Ws computed in 593388 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 47 Ws computed in 599459 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 48 Ws computed in 582981 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 49 Ws computed in 587815 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 50 Ws computed in 564520 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 51 Ws computed in 561105 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 52 Ws computed in 594560 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 53 Ws computed in 600382 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 54 Ws computed in 579171 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 55 Ws computed in 576507 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 56 Ws computed in 547526 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 57 Ws computed in 595567 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 58 Ws computed in 603381 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 59 Ws computed in 489808 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 60 Ws computed in 611565 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 61 Ws computed in 566728 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 62 Ws computed in 676809 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 63 Ws computed in 581978 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 64 Ws computed in 577869 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 65 Ws computed in 594067 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 66 Ws computed in 623121 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 67 Ws computed in 614813 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 68 Ws computed in 590678 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 69 Ws computed in 579085 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 70 Ws computed in 618087 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 71 Ws computed in 546926 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 72 Ws computed in 600567 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 73 Ws computed in 590150 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 74 Ws computed in 572589 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 75 Ws computed in 630984 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 76 Ws computed in 609496 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 77 Ws computed in 613116 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 78 Ws computed in 638287 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 79 Ws computed in 621820 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 80 Ws computed in 669887 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 81 Ws computed in 602537 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 82 Ws computed in 628142 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 83 Ws computed in 566158 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 84 Ws computed in 634019 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 85 Ws computed in 631820 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 86 Ws computed in 608775 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 87 Ws computed in 633132 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 88 Ws computed in 644883 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 89 Ws computed in 589766 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 90 Ws computed in 613495 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 91 Ws computed in 586674 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 92 Ws computed in 580360 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 93 Ws computed in 598500 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 94 Ws computed in 681369 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 95 Ws computed in 619152 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 96 Ws computed in 633480 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 97 Ws computed in 597375 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 98 Ws computed in 636583 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 99 Ws computed in 624263 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 100 Ws computed in 628185 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 101 Ws computed in 609511 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 102 Ws computed in 587495 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 103 Ws computed in 660612 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 104 Ws computed in 661375 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 105 Ws computed in 641522 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 106 Ws computed in 643263 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 107 Ws computed in 616006 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 108 Ws computed in 651561 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 109 Ws computed in 651826 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 110 Ws computed in 630829 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 111 Ws computed in 636949 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 112 Ws computed in 647163 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 113 Ws computed in 599152 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 114 Ws computed in 617505 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 115 Ws computed in 610568 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 116 Ws computed in 630715 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 117 Ws computed in 631035 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 118 Ws computed in 623752 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 119 Ws computed in 604448 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 120 Ws computed in 636511 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 121 Ws computed in 674771 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 122 Ws computed in 643581 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 123 Ws computed in 623741 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 124 Ws computed in 636790 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 125 Ws computed in 684261 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 126 Ws computed in 656602 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 127 Ws computed in 642472 usec 
+Jacobi (ff::ParallelFor) 5120 N, 100 Iters, 128 Ws computed in 620276 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4309900 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4294860 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4293098 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4331162 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4286607 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4394463 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4282364 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4287819 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4276947 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4271750 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4264207 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4274866 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4282339 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4269815 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4252698 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4260795 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4284956 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4299290 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4302521 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4319470 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4257835 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4254337 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4279932 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4308752 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4268461 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4263712 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4299834 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4283154 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4273954 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4292516 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4271181 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4273210 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4288007 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4278661 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4270764 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4276836 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4295632 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4282834 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4251207 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4240789 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4270805 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4237930 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4290683 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4268906 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4264151 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4320819 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4267148 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4313228 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4285325 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4272917 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4258094 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4278533 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4279529 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4280420 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4261381 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4293570 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4278522 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4328585 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4341313 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4272667 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4266589 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4265813 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4295552 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4253043 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4253919 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4232487 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4297013 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4310429 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4265740 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4296852 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4315466 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4349158 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4407261 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4294103 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4330373 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4382319 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4243550 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4280119 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4254947 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4231861 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4288135 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4265532 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4282793 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4307090 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4314009 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4300332 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4306518 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4294959 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4272224 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4314680 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4301068 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4291340 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4246383 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4300662 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4269618 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4275731 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4264959 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4299795 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4311665 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4352421 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4375758 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4317755 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4396629 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4313671 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4331365 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4296458 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4299424 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4257596 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4374683 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4283243 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4254502 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4278498 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4287322 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4261739 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4258806 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4252454 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4265316 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4280759 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4239427 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4320086 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4295071 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4265882 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4380044 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4317619 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4235052 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4270467 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4303335 usec 
+Jacobi (sequential) 5120 N, 100 Iters computed in 4270146 usec 

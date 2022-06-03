@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -std=c++20 -pthread  -g -Wl,--enable-auto-import CMakeFiles/project.dir/sequential.cpp.o -o project.exe -Wl,--out-implib,libproject.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

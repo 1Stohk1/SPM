@@ -5,13 +5,6 @@
 
 using namespace std;
 
-void pointer_joking(){
-    int c = 0;
-    int* ptr = &c;
-    int** ptr_of_ptr = &ptr;
-    **ptr_of_ptr += 1;
-    printf("%d, %d, %d, %d, %d", ptr, &c, *ptr, c, &ptr);
-}
 
 void simple_operation(int* ptr){
     *ptr += 1;

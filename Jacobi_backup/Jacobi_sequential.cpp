@@ -43,5 +43,6 @@ int main(int argc, char *argv[])
             Jacobi();
         }
     }
+    
     ls.print_results();
 }

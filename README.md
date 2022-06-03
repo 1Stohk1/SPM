@@ -35,8 +35,11 @@ Assignment 4 (March 30): implement a task pool using C++ threads and STDLIB. The
 Assignment 5 (April 6): implementation of a farm using OpenMP. Tasks to be computed have to be provided through a for loop with iterations producing one of the input tasks and then awaiting for Ta time (parameter) before executing next iteration. The parallelism degree of the farm should be a parameter. Each task should spent some parametric amount of time (possibly using the active_wait functioN) to produce the final result.  
 Assignment 6 (April 13): write a parallel  program that finds all prime numbers in a given range of values, passed as parameters of the command line. In order to check if a number is prime, please use the following code:  
 
-[![solution](https://upload.wikimedia.org/wikipedia/commons/c/c5/Wikipedia-logo-v2-it.png)](http://en.wikipedia.org/wiki/Primality_test)
-  
+
+<p align="center">
+<a href="http://en.wikipedia.org/wiki/Primality_test"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Wikipedia-logo-v2-it.png" height="150" ></a>
+</p>
+
 ```
 static bool is_prime(ull n) {
    if (n <= 3) return n > 1; // 1 is not prime !
@@ -55,7 +58,10 @@ static bool is_prime(ull n) {
 }
 ```
 
-Consider your favorite parallel programming framework among the ones we ve seen so far (C++ native threads, OpenMP, GrPPI) and possibly implement more that one version (e.g. a native C++ and an OpenMP version) comparing the relative performances.
+Consider your favorite parallel programming framework among the ones we ve seen so far (C++ native threads, OpenMP, GrPPI) and possibly implement more that one version (e.g. a native C++ and an OpenMP version) comparing the relative performances.  
+Assignment 7 (May 3): write a parallel program getting a vector of n floating point numbers with first position 0.0, last position 100.0 and intermediate position 25.0 and computing (in parallel) k iterations each re-computing position i in the vector (i in [1,n-2]) as the average of previous values of positions i, i-1 and i+1 (positions 0 and n never change). Two versions are required, one using FastFlow and the other one using any other framework (C++ threads, OpenMP, GrPPi).
 ***             
+
                             
-_N.B. The Assignment 4 folder refers to both 4 and 5 assignments_
+_N.B. The Assignment4_5 folder refers to both 4 and 5 assignments_  
+Furthermore there are some parallel pattern implemented in different libraries to practice

@@ -6,14 +6,11 @@
 #include "lib/utimer.hpp"
 #include "lib/linear_system.hpp"
 
-using namespace std;
-using namespace ff;
-
 int main(int argc, char *argv[])
 {
     if (argc != 5)
     {
-        cout << "Usage is: " << argv[0] << " Dimension_of_the_system(int) Number_of_iterations(int) Number_Workers(int) Check_Results[0/1](bool)" << endl;
+        std::cout << "Usage is: " << argv[0] << " Dimension_of_the_system(int) Number_of_iterations(int) Number_Workers(int) Check_Results[0/1](bool)" << std::endl;
         return (0);
     }
     int n_dim = atoi(argv[1]);
@@ -25,13 +22,13 @@ int main(int argc, char *argv[])
     Linear_System ls(n_dim, check);
 
     {
-        timer_raii tim("Jacobi (FastFlow ParallelFor) with " + to_string(iterations) + " iterations and " + to_string(nw) + " nw");
+        timer_raii tim("Jacobi (FastFlow ParallelFor) with " + std::to_string(iterations) + " iterations and " + std::to_string(nw) + " nw");
 
-        ff::ParallelFor pf(nw);
+        ff::ParallelFor pf(nw, true);
 
         for (int i = 0; i < iterations; i++)
         {
-            pf.parallel_for(0, n_dim, 1, n_dim / nw, [&](int id)
+            pf.parallel_for(0, n_dim, 1, 0, [&](int id)
                             {
             ls.x_curr[id] = ls.b[id];
             for (size_t col = 0; col < n_dim; col++)
@@ -43,6 +40,7 @@ int main(int argc, char *argv[])
             ls.update();
         }
     }
+    
     ls.print_results();
     return 0;
 }

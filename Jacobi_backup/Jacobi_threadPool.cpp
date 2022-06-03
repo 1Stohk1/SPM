@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
         t = thread(thread_pool);
     }
     vector<future<void>> vf(nw);
-
+    long long microseconds = 0;
     {
         timer_raii tim("Jacobi (thread_pool) with " + to_string(iterations) + " iterations and " + to_string(nw) + " nw");
         for (int iter = 0; iter < iterations; iter++)
@@ -96,11 +96,14 @@ int main(int argc, char *argv[])
                 vf[id] = pt.get_future();
                 submit(pt);
             }
+            auto start = std::chrono::high_resolution_clock::now();
             for (int i = 0; i < nw; i++)
             {
                 vf[i].get();
             }
             ls.update();
+            auto elapsed = std::chrono::high_resolution_clock::now() - start;
+            microseconds += std::chrono::duration_cast<std::chrono::microseconds>(elapsed).count();
         }
         stopTp();
         for (auto &t : threads)
@@ -109,6 +112,7 @@ int main(int argc, char *argv[])
                 t.join();
         }
     }
+    cout << "elapsed " << microseconds << "\n The avg is " << microseconds << endl;
     ls.print_results();
     return 0;
 }
